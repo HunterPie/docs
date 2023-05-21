@@ -13,7 +13,7 @@ jobs:
 
     runs-on: ubuntu-latest
     env:
-      working-directory: ./Docs
+      working-directory: .
 
     steps:
       - name: Checkout
