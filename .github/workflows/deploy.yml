@@ -13,7 +13,7 @@ jobs:
 
     runs-on: ubuntu-latest
     env:
-      working-directory: .
+      working-directory: ./src
 
     steps:
       - name: Checkout
