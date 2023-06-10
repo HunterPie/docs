@@ -155,13 +155,13 @@ That means the base address of our structure is `0x1004 - 4 = 0x1000`, with that
 You can now put a breakpoint on that pointer and see the instructions, that access it, it should be something like:
 
 ```nasm
-mov rbx, [rax+24]
+mov rbx, [rax+14h]
 ```
 
 By doing the same process you did previously, you’ll find the static memory, now you can always get to the **Structure 3**’s desired field by following that “path” of offsets, you just need to dereference the static address with the offsets you found:
 
 ```
-Static Memory -> (Structure 1 + 0x24) -> (Structure 3 + 0x4) -> Desired field 
+Static Memory -> (Structure 1 + 0x14) -> (Structure 3 + 0x4) -> Desired field 
 ```
 
 Dereferencing the memory values from the static memory is HunterPie’s main way to extract the data from the game, it is constantly reading the game’s memory and updating the values internally.
