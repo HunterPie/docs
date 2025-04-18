@@ -33,6 +33,8 @@ Arch-Tempered ($20) | Unlimited
 The dashboard is where you can visualize the details of the hunt, this includes:
 
 - Damage over time;
+- Moving average DPS
+- Monster's health over time
 - Enrage uptimes and activation spans;
 - Abnormalities uptimes and activation spans;
 - Party members;
@@ -41,7 +43,7 @@ The dashboard is where you can visualize the details of the hunt, this includes:
 > **Note:** More information will be added in the future, this includes deaths and more detailed information about damage and weapon attacks
 {:.prompt-info}
 
-![dashboard-page](/Static/hunt-dashboard.gif)
+<iframe width="560" height="420" src="https://cdn.hunterpie.com/Static/client/hunterpie-hunt-export.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Known Issues
 
