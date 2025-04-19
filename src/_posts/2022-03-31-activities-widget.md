@@ -18,6 +18,5 @@ The Activities Widget is responsible for tracking and displaying the data from s
 
 - Submarines
 - Training Dojo
-
-> Meowmasters and other activities will be supported in the future.
-{: .prompt-info }
+- Meowcenaries
+- Cohoot Nest
