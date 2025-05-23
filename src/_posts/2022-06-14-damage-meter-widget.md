@@ -15,8 +15,17 @@ The Damage Meter Widget is responsible for tracking and displaying yours and you
 
 ### Monster Hunter Wilds
 
-For Monster Hunter Wilds, the damage is tracked by the game itself. HunterPie just reads that information and displays it. You can always assume your own damage is **always** accurate, however, there will **always** be innacuracies when comparing to the damage on other player's meters.
-That innacuracy is due to how the game calculates the damage and there's nothing that can be done.
+For Monster Hunter Wilds, the damage is tracked in two different ways:
+
+1. If the player is in a quest, the quest award damage value will be used. This value is synchronized with every party member, which means it is the most accurate value possible and everyone in the party will receive the actual damage each party member dealt. The limitation is that it:
+    - Only works in normal quests, arena quests do not count.
+    - The value will be updated only once every 5 seconds for remote players and in real time for the local player.
+2. As a fallback, if there is no accurate damage value available, the not-as-accurate value will be used. This value is always calculated by your game regardless if you're the host or not, and since it is not synced amongst party members, the value can have some inconsistencies when comparing to the meter of other players.
+
+In both cases, your own damage is always accurate.
+
+> **Warning:** Only damage coming directly from weapons are accounted for, this is how the game handle these damage calculations. HunterPie **DOES NOT** calculate anything, it just displays the values that your game calculates.
+{:.prompt-warning}
 
 ### Monster Hunter World
 
