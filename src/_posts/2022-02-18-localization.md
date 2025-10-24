@@ -5,7 +5,6 @@ date: 2022-02-18 00:07 -0300
 badge: docs
 math: true
 categories: [Documentation, General]
-pin: true
 ---
 HunterPie supports different languages other than English, if you want to localize it to another language make sure to read this because it covers everything you need to know to make your own localization file.
 

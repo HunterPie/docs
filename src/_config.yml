@@ -21,7 +21,7 @@ timezone: Asia/Shanghai
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: HunterPie                          # the main title
+title: HunterPie                    # the main title
 
 tagline: A modern and powerful overlay for Monster Hunter  # it will display as the sub-title
 

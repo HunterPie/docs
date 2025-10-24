@@ -17,44 +17,35 @@ ion-icon {
 
 update::before {
     content: "Update";
-    font-family: 'Source Sans Pro', 'Microsoft Yahei', sans-serif; ;
-    color: #ffa59b;
-    border: 1px solid #ffa59b; 
-    font-weight: 600;
+    color: #EC5D1C;
     display: inline-flex;
     vertical-align: super;
     padding: 5px;
     border-radius: 5px;
-    background-color: #ac4b4063;
+    background-color: #EC5D1C41;
     font-size: 1vh;
 }
 
 docs::before {
     content: "Docs";
-    font-family: 'Source Sans Pro', 'Microsoft Yahei', sans-serif; ;
     color: whitesmoke;
-    font-weight: 600;
     display: inline-flex;
     vertical-align: super;
     padding: 5px;
     border-radius: 5px;
     color: #64a4ff;
-    border: 1px solid #64a4ff; 
     background-color: #4b8fee3d;
     font-size: 1vh;
 }
 
 blog::before {
     content: "Blog";
-    font-family: 'Source Sans Pro', 'Microsoft Yahei', sans-serif; ;
     color: whitesmoke;
-    font-weight: 600;
     display: inline-flex;
     vertical-align: super;
     padding: 5px;
     border-radius: 5px;
-    color: #64ffb1;
-    border: 1px solid #64ffb1; 
-    background-color: #64ffb141;
+    color: #8E51FF;
+    background-color: #8E51FF41;
     font-size: 1vh;
 }

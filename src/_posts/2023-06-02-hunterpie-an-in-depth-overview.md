@@ -4,7 +4,6 @@ title: "HunterPie - An in-depth overview"
 description: "Talking a little bit about HunterPie's architecture"
 date: 2023-06-02 17:18 -0300
 badge: blog
-pin: true
 categories: [Blog, Architecture]
 image:
     src: /Static/evolution-of-ui.png
