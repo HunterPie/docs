@@ -1,22 +1,47 @@
 ---
 layout: post
 title: "Activities Widget"
-date: 2022-03-31 23:39 -0300
+date: 2025-10-23 19:21 -0300
 badge: docs
 math: true
 categories: [Documentation, Overlay, Widgets]
 ---
-The Activities Widget is responsible for tracking and displaying the data from side activities in the game as Submarines, Training Dojo, etc.
+The Activities Widget is responsible for tracking and displaying data from activities from the game.
 
-## Widget Structure
+## Games
 
-![activities-widget-structure](/Static/activities-widget-structure.png)
+### Monster Hunter Wilds
 
-## Supported Actitivites
+The following activities are supported:
 
-### Monster Hunter: Rise
+- Material Retrieval;
+- Support Ship;
+- Rations;
 
-- Submarines
-- Training Dojo
-- Meowcenaries
-- Cohoot Nest
+![monster-hunter-wilds-activities](/Static/widgets/monster-hunter-wilds-activities.png) *Monster Hunter Wilds Widget*
+
+### Monster Hunter World
+
+The following activities are supported:
+
+- Harvest Box;
+- Steamworks;
+- Argosy;
+- Tailraiders;
+
+![monster-hunter-world-activities](/Static/widgets/monster-hunter-world-activities.png) *Monster Hunter World Widget*
+
+### Monster Hunter Rise
+
+The following activities are supported:
+
+- Submarines;
+- Meowcenaries;
+- Training Dojo;
+- Cohoot Nests;
+
+![monster-hunter-rise-activities](/Static/widgets/monster-hunter-rise-activities.png) *Monster Hunter Rise Widget*
+
+## Settings
+
+It is possible to toggle any individual activity of the widget, HunterPie will adjust it's content automatically.

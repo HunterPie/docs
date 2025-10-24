@@ -6,11 +6,6 @@ badge: docs
 categories: [Documentation, Issues]
 ---
 
-If you're having an issue with HunterPie like crash or freezes, do the following:
-
-> If you're having freezing issues or crashes, skip to [Memory Dump](#memory-dump)
-{: .prompt-danger }
-
 ## Memory Dump
 
 Debugging a software without any data that can be analyzed is really hard, so if your HunterPie is *constantly* freezing, you can try generating a memory dump of HunterPie's process so I can analyze it and see if there's anything weird going on. To generate a memory dump, do the following:

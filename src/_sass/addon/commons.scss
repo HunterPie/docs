@@ -33,7 +33,7 @@ body {
   background: var(--body-bg);
   color: var(--text-color);
   -webkit-font-smoothing: antialiased;
-  font-family: 'Source Sans Pro', 'Microsoft Yahei', sans-serif;
+  font-family: 'Work Sans', 'Microsoft Yahei', sans-serif;
 }
 
 /* --- Typography --- */
@@ -121,7 +121,7 @@ blockquote {
 
   @include prompt("info", "\f05a");
 
-  @include prompt("warning", "\f06a");
+  @include prompt("warning", "\f071");
 
   @include prompt("danger", "\f071");
 
@@ -756,7 +756,7 @@ $sidebar-display: "sidebar-display";
       &:last-child {
         a {
           position: relative;
-          left: $cursor-width / 2;
+          left: calc($cursor-width / 2);
           width: 100%;
         }
 
@@ -782,7 +782,7 @@ $sidebar-display: "sidebar-display";
 
     @for $i from 1 through $tab-count {
       $offset: $tab-count - $i;
-      $top: -$offset * $tab-height + ($tab-height - $tab-cursor-height) / 2;
+      $top: -$offset * $tab-height + calc(($tab-height - $tab-cursor-height) / 2);
 
       @if $i < $tab-count {
         > li.active:nth-child(#{$i}),
@@ -1686,6 +1686,7 @@ $sidebar-display: "sidebar-display";
 
       i {
         background-color: var(--sidebar-btn-bg);
+        border: var(--border-color) 1px solid;
         font-size: 1rem;
         width: $icon-block-size;
         height: $icon-block-size;

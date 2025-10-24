@@ -24,7 +24,7 @@ For Monster Hunter Wilds, the damage is tracked in two different ways:
 
 In both cases, your own damage is always accurate.
 
-> **Warning:** Only damage coming directly from weapons are accounted for, this is how the game handle these damage calculations. HunterPie **DOES NOT** calculate anything, it just displays the values that your game calculates.
+> Only damage coming directly from weapons are accounted for, this is how the game handle these damage calculations. HunterPie **DOES NOT** calculate anything, it just displays the values that your game calculates.
 {:.prompt-warning}
 
 ### Monster Hunter World
@@ -41,8 +41,8 @@ To calculate the damage for Monster Hunter Rise, HunterPie will sum every hit da
 - Damage done by ailments (e.g: poison, blast)
 - Damage done by other monsters
 
-> **Warning:** Hitting a dead monster will still count as damage done to a monster. This is a known issue and will be fixed eventually.
-{:.prompt-danger}
+> Hitting a dead monster will still count as damage done to a monster. This is a known issue and will be fixed eventually.
+{:.prompt-warning }
 
 ## Settings
 
@@ -60,8 +60,8 @@ HunterPie will display the moving average DPS by default, the moving average is 
 
 It is highly recommended to use the moving average, however it is also possible to toggle it off and plot either overall DPS or total damage.
 
-> **Note:** Changing the plot mode while in a hunt will not update the previous points that were already plotted in the graph.
-{: .prompt-warning }
+> Changing the plot mode while in a hunt will not update the previous points that were already plotted in the graph.
+{: .prompt-note }
 
 ### DPS Calculation
 

@@ -4,7 +4,6 @@ title: "The development of HunterPie"
 description: "Talking a little bit about the development of HunterPie."
 date: 2023-03-28 02:43 -0300
 badge: blog
-pin: true
 categories: [Blog, UI]
 image:
     src: /Static/evolution-of-ui.png

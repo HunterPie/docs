@@ -145,7 +145,7 @@
 
 @mixin prompt($type, $fw-icon, $icon-weight: 900) {
   &.prompt-#{$type} {
-    background-color: var(--prompt-#{$type}-bg);
+    background: var(--prompt-#{$type}-bg);
 
     &::before {
       content: $fw-icon;
