@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Monster Widget"
-date: 2022-02-14 19:03 -0300
+date: 2022-02-13 19:03 -0300
 badge: docs
 math: true
 categories: [Documentation, Overlay, Widgets]
@@ -10,7 +10,7 @@ The Monster Widget is responsible to track and display all the big monsters info
 
 ## Widget Structure
 
-![monster-widget-structure](/Static/monster-widget-structure.png)
+![monster-widget-structure](/Static/widgets/monster-widget.png)
 
 ### Monster Parts
 
@@ -18,15 +18,15 @@ Parts are represented by the blue, yellow and red bars under the ailments compon
 
 Color | Represents | Description
 :----:|:----------:|--------------------
-<ion-icon name="prism" style="fill:#22aae1;"/> | `Flinch` | Flinch values represent when the monster is going to flinch or get staggered.
-<ion-icon name="prism" style="fill:#fdc45b;"/> | `Break`  | Break values represent when a part is about to break.
-<ion-icon name="prism" style="fill:#e53737;"/> | `Sever` | Severable parts are the ones that can be cut off from a monster.
-<ion-icon name="prism" style="fill:#7f7f7f;"/> | `Broken` | A part will become Grey when it's either broken or severed. 
-<ion-icon name="prism" style="fill:#EE4B96;"/> | `Qurio`* | A part will become Pink when it's related to the monster's Qurio state. 
+<ion-icon name="water" style="fill:#22aae1;"/> | `Flinch` | Flinch values represent when the monster is going to flinch or get staggered.
+<ion-icon name="water" style="fill:#fdc45b;"/> | `Break`  | Break values represent when a part is about to break.
+<ion-icon name="water" style="fill:#e53737;"/> | `Sever` | Severable parts are the ones that can be cut off from a monster.
+<ion-icon name="water" style="fill:#7f7f7f;"/> | `Broken` | A part will become Grey when it's either broken or severed. 
+<ion-icon name="water" style="fill:#EE4B96;"/> | `Qurio`* | A part will become Pink when it's related to the monster's Qurio state. 
 
 When a part has all three values, the priority order is **always** `Qurio` > `Sever` > `Break` > `Flinch` and the exact values displayed under the part health bar will follow that priority.
 
-> By default, HunterPie only shows monsters's parts when you lock/focus on the monster using the in-game lock-on system.
+> By default, HunterPie only shows monsters's parts when have the monster as a target. Read [Targeting a monster](#targeting-a-monster) for more information.
 {: .prompt-info }
 
 > A Qurio part is exclusive for **Monster Hunter Rise: Sunbreak**
@@ -38,19 +38,21 @@ Ailments are statuses and debuffs you can inflict on a monster, HunterPie suppor
 
 They're designed to be as simple to read as possible, displaying Build Up, Duration and also how many times that Ailment has been activated on that monster. Each ailment has it's own individual color to make it easier to know what ailment has been inflicted without having to read it's name.
 
-> By default, HunterPie only shows monsters's ailments when you lock/focus on the monster using the in-game lock-on system.
+> By default, HunterPie only shows monsters's ailments when have the monster as a target. Read [Targeting a monster](#targeting-a-monster) for more information.
 {: .prompt-info }
 
 ### Targeting a monster
 
-Having to target a monster to see their information is part of HunterPie's design to avoid cluttering the screen with multiple monsters information, to target a monster, all you need to do is use the in-game lock-on system. 
+Having to target a monster to see their information is part of HunterPie's design to avoid cluttering the screen with multiple monsters information, HunterPie offers a couple ways to target monsters:
 
-> If you have targeting system disabled in-game, this will not work. You must have either **Target** or **Focus** enabled.
-{: .prompt-warning }
+- **Lock-on:** Uses the game lock-on/targeting system. This is better if you want to have 100% control over HunterPie's monster target.
+- **Inference:** HunterPie will calculate a score based on distance, health and how recent was the last damage the monster took. This option is good if you don't want to manually target anything, however, since it's based on guessing, it *can* target the wrong monster in certain conditions.
+- **Map Pin:** This options uses the map pin mechanic from Monster Hunter World to target the monster.
+- **Quest Target:** This option only exists for Monster Hunter Rise and will use the quest's monster as the target.
 
 ### Capture indicator
 
-For capturable monsters, an upside down triangle (<ion-icon name="caret-down-sharp" style="fill:#FBB623"></ion-icon>) will be placed on the exact percentage where the monster will become capturable. Once it's health falls into the capturable threshold, a shock trap icon (<svg width="25" height="25"><image xlink:href="https://cdn.hunterpie.com/Static/shock_trap.svg" width="25" height="25"/></svg>) will be displayed. 
+For capturable monsters, an upside down triangle (<ion-icon name="caret-down-sharp" style="fill:#FBB623"></ion-icon>) will be placed on the exact percentage where the monster will become capturable.
 
 ### Orientation
 
@@ -61,26 +63,3 @@ Orientation | Description
 :----------:|:--------------------
 Vertical    | Monster health bars will be placed on top of each other in the order they spawn
 Horizontal  | Monster healht bars will be placed side by side in the order they spawn
-
-![horizontal-bars-demo](/Static/horizontal-bars-demo.jpg) *Horizontally aligned bars*
-
-### Dynamic Resizing
-
-Dynamic resizing is one of the Monster Widget's features, it's very useful when your widget is in the `Horizontal` mode, it tries to calculate the health bar's width dynamically instead of having a static width based on how many monsters the widget is displaying at that moment.
-The width is calculated based on the width set as `Minimum Width`, using the following formula:
-
-$$ dynWidth = min + ((3 - n) * {min \over 4}) $$ 
-
-- **min:** Minimum Width
-- **n:** Number of monsters visible
-
-So, if you set the minimum width as `300`, each possible case will result in these dynamic widths:
-
-Monsters visible | Width (px)
-:---------------:|:----------------
-3                | 300
-2                | 375
-1                | 450
-
-> **Note:** Even if the dynamic width is higher or lower than the maximum and minimum width respectively, the visual width will not go above/below those widths.
-{: .prompt-note }
