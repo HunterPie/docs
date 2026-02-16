@@ -8,9 +8,9 @@ categories: [Documentation, Issues]
 
 ## Memory Dump
 
-Debugging a software without any data that can be analyzed is really hard, so if your HunterPie is *constantly* freezing, you can try generating a memory dump of HunterPie's process so I can analyze it and see if there's anything weird going on. To generate a memory dump, do the following:
+Debugging software without any data that can be analyzed is really hard, so if your HunterPie is *constantly* freezing, you can try generating a memory dump of HunterPie's process so I can analyze it and see if there's anything weird going on. To generate a memory dump, do the following:
 
-1. Open the command prompt by opening Window's search and typing `cmd`
+1. Open the command prompt by opening Windows's search and typing `cmd`
 2. Run the following command
 ```powershell
 dotnet tool install --global dotnet-gcdump
