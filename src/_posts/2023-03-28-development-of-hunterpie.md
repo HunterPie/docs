@@ -83,7 +83,7 @@ I wanted a cleaner design for the client, and changing the colors to a baby blue
 
 ![hunterpie v1 last iteration](/Static/hunterpie-v1-last-iteration.png){: width="500"} *HunterPie v1 last iteration client*
 
-Adding a blur effect to the background also made the client to look more modern, similar to Window's native acryllic effect.
+Adding a blur effect to the background also made the client to look more modern, similar to Windows's native acrylic effect.
 
 As for the settings page, having every setting in a single component was getting way too cluttered and messy, so I added different tabs for each one of the features, the settings were also aligned in a way so the setting label would be anchored to the left and the actual control for that setting would be on the right-most side, that was a way to solve the weird alignment of the previous iteration.
 
@@ -104,8 +104,8 @@ The reason why I started rewriting HunterPie from scratch to what would become v
 So for v2 I decided to fix some issues legacy had:
 
 - **The client UI had to look more modern and clean:** I don't think legacy's UI was bad, but I don't think it was great either.
-- **The settings page to be generated automatically:** This is one of legacy's biggest issues for me as a developer, everytime I added new settings I had to also create the UI components for it manually.
-- **The settings should be saved automatically on change:** Legacy couldn't detect if the settings were changed, so the user had to click on the `Save` button everytime they made changes.
+- **The settings page to be generated automatically:** This is one of legacy's biggest issues for me as a developer, every time I added new settings I had to also create the UI components for it manually.
+- **The settings should be saved automatically on change:** Legacy couldn't detect if the settings were changed, so the user had to click on the `Save` button every time they made changes.
 - **Support any Monster Hunter game:** Legacy could only support Monster Hunter World.
 - **Write the code in a way that Core code is separate from the UI code:** Legacy code didn't have this distinction, core code could access the UI'd and vice-versa.
 
@@ -129,7 +129,7 @@ And the damage meter had a lot of UI improvements too:
 
 ## Final Considerations
 
-There were a lot of enhancements to HunterPie's user interface throghout time, most of the things were just trial and error, see what works and what does not. Some came with time and experience after I started working as a software engineer and started having more contact with real world software.
+There were a lot of enhancements to HunterPie's user interface throughout time, most of the things were just trial and error, see what works and what does not. Some came with time and experience after I started working as a software engineer and started having more contact with real world software.
 
 The user interface is just the tip of the iceberg for HunterPie, there's a lot going on behind it, a lot of time and effort put into researching the games, designing and coding HunterPie's UI, coding internal things used in the core of HunterPie, coding the native part that is required for some features, coding the backend, maintaining all the infrastructure, etc.
 
